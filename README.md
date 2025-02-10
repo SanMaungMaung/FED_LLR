@@ -3,9 +3,9 @@
 # Little-Lemon 🍋
 
 <p>
-Welcome to the Little Lemon Restaurant website repository. This project was created as a part of the Meta Frontend Developer course. It's built using React and offers a stylish interface for users who want to explore the restaurant's menu and make reservations.
+Welcome to the repository for the Little Lemon Restaurant website. Developed as part of the Meta Frontend Developer course, this project utilizes React to deliver an elegant interface, allowing users to peruse the restaurant's menu and make reservations seamlessly.
 </p>
 
 --------
 
-![preview](https://github.com/victorpreston/little-lemon-restaurant/assets/112781610/c89281ce-be90-4271-a15d-9f44f6153dee)
+![preview](https://raw.githubusercontent.com/SanMaungMaung/FED_LLR/refs/heads/main/preview.png)
