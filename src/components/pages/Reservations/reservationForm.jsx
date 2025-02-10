@@ -62,7 +62,7 @@ const ReservationForm = ({
   };
 
   return (
-    <form onSubmit={handleFormSubmit}>
+    <form onSubmit={handleFormSubmit} aria-labelledby="reservation-form-title">
       <FormField
         label="First Name"
         htmlFor="reservation-first-name"
@@ -75,6 +75,9 @@ const ReservationForm = ({
           name="reservation-first-name"
           value={firstName}
           required={true}
+          aria-required="true"
+          aria-invalid={!isFirstNameValid()}
+          aria-describedby="reservation-first-name-error"
           onChange={(e) => setFirstName(e.target.value)}
         />
       </FormField>
@@ -90,6 +93,9 @@ const ReservationForm = ({
           name="reservation-last-name"
           value={lastName}
           required={true}
+          aria-required="true"
+          aria-invalid={!isLastNameValid()}
+          aria-describedby="reservation-last-name-error"
           onChange={(e) => setLastName(e.target.value)}
         />
       </FormField>
@@ -105,6 +111,9 @@ const ReservationForm = ({
           name="reservation-email"
           value={email}
           required={true}
+          aria-required="true"
+          aria-invalid={!isEmailValid()}
+          aria-describedby="reservation-email-error"
           onChange={(e) => setEmail(e.target.value)}
         />
       </FormField>
@@ -120,6 +129,9 @@ const ReservationForm = ({
           name="reservation-phone-number"
           value={phoneNumber}
           required={true}
+          aria-required="true"
+          aria-invalid={!isPhoneNumberValid()}
+          aria-describedby="reservation-phone-number-error"
           onChange={(e) => setPhoneNumber(e.target.value)}
         />
       </FormField>
@@ -136,6 +148,9 @@ const ReservationForm = ({
           min={minimumDate}
           value={date}
           required={true}
+          aria-required="true"
+          aria-invalid={!isDateValid()}
+          aria-describedby="reservation-date-error"
           onChange={handleDateChange}
         />
       </FormField>
@@ -151,6 +166,9 @@ const ReservationForm = ({
             name="reservation-time"
             value={time}
             required={true}
+            aria-required="true"
+            aria-invalid={!isTimeValid()}
+            aria-describedby="reservation-time-error"
             onChange={handleTimeChange}
           >
             {availableTimes.map((times) => (
@@ -175,6 +193,9 @@ const ReservationForm = ({
           min={minimumNumberOfGuests}
           max={maximumNumberOfGuests}
           required={true}
+          aria-required="true"
+          aria-invalid={!isNumberOfGuestsValid()}
+          aria-describedby="reservation-number-guests-error"
           onChange={(e) => setNumberGuests(e.target.value)}
         />
       </FormField>
@@ -190,6 +211,9 @@ const ReservationForm = ({
             name="reservation-occasion"
             value={occasion}
             required={true}
+            aria-required="true"
+            aria-invalid={!isOccasionValid()}
+            aria-describedby="reservation-occasion-error"
             onChange={(e) => setOccasion(e.target.value)}
           >
             {occasions.map((occasion) => (
@@ -204,6 +228,7 @@ const ReservationForm = ({
         className="button-primary"
         type="submit"
         disabled={!areAllFieldsValid()}
+        aria-label="On Click"
       >
         Reserve now!
       </button>

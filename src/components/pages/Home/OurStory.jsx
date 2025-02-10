@@ -8,19 +8,17 @@ const OurStory = () => {
       <div className="our-story-description">
         <h2>Our Story</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum. Sed ut
-          perspiciatis unde omnis iste natus error sit voluptatem accusantium
-          doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
-          inventore veritatis et quasi architecto beatae vitae dicta sunt
-          explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-          odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-          voluptatem sequi nesciunt.
+          Little Lemon Restaurant was founded with a passion for bringing fresh, 
+          locally sourced ingredients to the community. Our journey began in a small 
+          kitchen where we experimented with flavors and recipes, aiming to create 
+          dishes that are both delicious and healthy. Over the years, we have grown 
+          into a beloved dining destination, known for our warm hospitality and 
+          commitment to quality. Our chefs, Mario and Adrian, work tirelessly to 
+          craft meals that delight the senses and nourish the soul. We believe in 
+          the power of food to bring people together, and we strive to make every 
+          dining experience memorable. From our family to yours, we invite you to 
+          join us at Little Lemon and taste the difference that passion and dedication 
+          make.
         </p>
       </div>
       <div className="our-story-chefs">

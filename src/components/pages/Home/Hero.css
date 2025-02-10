@@ -1,6 +1,8 @@
 .hero {
   padding-top: 1.875rem;
   background-color: #495e57;
+  position: relative;
+  z-index: 3; /* Ensure Hero section is above other sections */
 }
 
 .hero .container {
@@ -53,6 +55,8 @@
   border-radius: 1rem;
   object-fit: cover;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 4; /* Ensure hero-image is above the background */
 }
 
 @media (max-width: 792px) {

@@ -9,16 +9,18 @@
   overflow: hidden;
   background-color: #edefee;
   box-shadow: 0 0 15px #d9d9d9;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Add transition for smooth effect */
+}
+
+.meal-card:hover {
+  background-color: #fff8d7; /* Change background color on hover */
+  box-shadow: 0 0 20px #a9a9a9; /* Make the drop shadow darker on hover */
 }
 
 .meal-card-image {
   position: relative;
   height: 12.5rem;
   overflow: hidden;
-}
-
-.meal-card:hover .meal-card-image img {
-  transform: scale(1.08);
 }
 
 .meal-card-image img {

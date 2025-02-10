@@ -4,7 +4,7 @@
   padding: 2.5rem 6%;
   height: 18rem;
   display: grid;
-  gap: 2rem;
+  gap: 1rem; /* Reduce the gap between columns */
   justify-content: space-evenly;
   grid-template-columns: repeat(4, minmax(6rem, max-content));
 }

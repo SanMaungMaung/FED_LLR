@@ -15,9 +15,9 @@ import "./footer.css";
 import logoWhiteImage from "./assets/logo-white.png";
 
 const contacts = [
-  { icon: faLocationDot, info: "123 Fake Ave, Chicago, IL 60602" },
-  { icon: faPhone, info: "+1 (012) 345-6789" },
-  { icon: faEnvelope, info: "info@littlelemon.com" },
+  { icon: faLocationDot, info: "456 Real St, Chicago, IL 69696" },
+  { icon: faPhone, info: "+1 (234) 567-8910" },
+  { icon: faEnvelope, info: "contact@littlelemon.chicago" },
 ];
 
 const socials = [
