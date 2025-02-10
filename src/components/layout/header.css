@@ -1,0 +1,107 @@
+.nav-bar {
+  border-bottom: 2px solid #495e57;
+  width: 100%;
+  max-width: none;
+  padding: 0 6%;
+  align-items: center;
+  display: flex;
+  justify-content: center; /* Center align the nav-bar */
+  gap: 14rem; /* Add more gap between logo and nav items */
+  height: 6.25rem;
+}
+
+.nav-bar-logo {
+  justify-self: center; /* Center align the logo */
+  align-self: center;
+  line-height: 0;
+}
+
+.nav-bar-logo img {
+  width: 10rem;
+  height: 2.75rem;
+}
+
+.nav-bar-hamburger {
+  display: none;
+  cursor: pointer;
+  color: #495e57;
+  background-color: transparent;
+}
+
+.nav-bar-hamburger svg {
+  width: 1.875rem;
+  height: 1.875rem;
+}
+
+.nav-bar-links {
+  display: flex;
+  justify-content: center; /* Center align the nav items */
+  align-items: center;
+  gap: 1.5rem; /* Use gap instead of column-gap for a fixed gap between navigation items */
+  transition: left 300ms linear;
+}
+
+.nav-bar-links li {
+  list-style-type: none;
+  font-weight: 600;
+  text-align: center; /* Center align the text */
+}
+
+.nav-bar-links a {
+  height: max-content;
+  text-transform: uppercase;
+  display: block;
+  padding: 0.4rem 0.4rem; /* Ensure padding is applied to the anchor tag to prevent movement */
+  white-space: nowrap; /* Prevent text from wrapping */
+  width: 100%; /* Ensure the anchor tag takes the full width of the list item */
+  transition: color 0.3s ease;
+}
+
+.nav-bar-links a:hover {
+  color: #F4CE14;
+}
+
+@media only screen and (max-width: 992px) {
+  .nav-bar {
+    justify-content: space-between; /* Adjust alignment for smaller screens */
+  }
+
+  .nav-bar-hamburger {
+    justify-self: end;
+    display: inline-flex;
+    border: none;
+  }
+
+  .nav-bar-links.expanded {
+    justify-content: flex-start;
+    align-items: flex-start;
+    left: 0;
+    box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.6);
+  }
+
+  .nav-bar-links.expanded li {
+    width: 100%;
+    border-bottom: 1px solid #495e57;
+  }
+
+  .nav-bar-links.expanded li a {
+    display: block;
+    padding: 1rem;
+  }
+
+  .nav-bar-links.expanded li:hover {
+    background-color: #ebebeb;
+  }
+
+  .nav-bar-links {
+    position: absolute;
+    flex-direction: column;
+    width: 75%;
+    max-width: 16rem;
+    height: 100vh;
+    top: 0;
+    left: -75%;
+    background-color: #ffffff;
+    z-index: 100;
+  }
+}
